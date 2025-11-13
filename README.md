@@ -95,8 +95,8 @@ Copy code
 Email: sili@example.com
 Password: sili230705
 📂 Struktur Folder
-pgsql
-Copy code
+
+```text
 api-php-native-sili/
 ├── config/
 │   └── env.php
@@ -105,29 +105,29 @@ api-php-native-sili/
 │   ├── .htaccess
 │   └── index.php
 ├── src/
-│   ├── Config/ 
-│   │   └──Database.php
+│   ├── Config/
+│   │   └── Database.php
 │   ├── Controllers/
-│   │   ├──AuthController.php
-│   │   ├──BaseController.php
-│   │   ├──HealthController.php
-│   │   ├──UploadController.php
-│   │   ├──UserController.php
-│   │   └──VersionController.php
+│   │   ├── AuthController.php
+│   │   ├── BaseController.php
+│   │   ├── HealthController.php
+│   │   ├── UploadController.php
+│   │   ├── UserController.php
+│   │   └── VersionController.php
 │   ├── Helpers/
-│   │   ├──Jwt.php
-│   │   ├──RateLimiter.php
-│   │   └──Response.php
+│   │   ├── Jwt.php
+│   │   ├── RateLimiter.php
+│   │   └── Response.php
 │   ├── Middlewares/
-│   │   ├──AuthMiddleware.php
-│   │   └──CorsMiddleware.php
+│   │   ├── AuthMiddleware.php
+│   │   └── CorsMiddleware.php
 │   ├── Repositories/
-│   │   └──UserRepository.php
+│   │   └── UserRepository.php
 │   └── Validation/
-│       └──Validator.php
+│       └── Validator.php
 ├── uploads/
 │   ├── .htaccess
-│   └── image dan file yang di upload dan namanya terHash.
+│   └── <hash-named files>
 ├── API PHP Native.postman_collection.json
 ├── api-contract.php
 ├── CHANGELOG.md
@@ -135,6 +135,7 @@ api-php-native-sili/
 ├── jwt.php
 ├── openapi-lite.yaml
 └── README.md
+```
 🧠 Fitur Utama
 Fitur	Deskripsi
 🔹 Routing Manual	Mengatur endpoint API di public/index.php
