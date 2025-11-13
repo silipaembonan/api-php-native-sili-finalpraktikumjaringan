@@ -99,44 +99,42 @@ pgsql
 Copy code
 api-php-native-sili/
 ├── config/
-|       ├── env.php
-├── logs/
+│   └── env.php
 ├── logs/
 ├── public/
-│       ├── index.php
-│       ├── .htaccess
+│   ├── .htaccess
+│   └── index.php
 ├── src/
-|   ├── config/
-|   |   ├── Database.php
+│   ├── Config/ 
+│   │   └──Database.php
 │   ├── Controllers/
-│   |   ├── AuthController.php
-|   |   ├── BaseController.php
-|   |   ├── HealthController.php
-|   |   ├── UploadController.php
-|   |   ├── UserController.php
-|   |   ├── VersionController.php
+│   │   ├──AuthController.php
+│   │   ├──BaseController.php
+│   │   ├──HealthController.php
+│   │   ├──UploadController.php
+│   │   ├──UserController.php
+│   │   └──VersionController.php
 │   ├── Helpers/
-|   |   ├── jwt.php
-|   |   ├── ratemiliter.php
-|   |   ├── response.php
+│   │   ├──Jwt.php
+│   │   ├──RateLimiter.php
+│   │   └──Response.php
 │   ├── Middlewares/
-|   |   ├── AuthMiddleware.php
-|   |   ├── CorsMiddleware.php
+│   │   ├──AuthMiddleware.php
+│   │   └──CorsMiddleware.php
 │   ├── Repositories/
-|   |    ├── UserRespository.php
+│   │   └──UserRepository.php
 │   └── Validation/
-|        ├── Validator.php  
+│       └──Validator.php
 ├── uploads/
-|        ├──.htaccess
-|        ├── images.png
-|        ├── file.pdf
+│   ├── .htaccess
+│   └── image dan file yang di upload dan namanya terHash.
 ├── API PHP Native.postman_collection.json
 ├── api-contract.php
 ├── CHANGELOG.md
 ├── composer.json
 ├── jwt.php
 ├── openapi-lite.yaml
-└── Readme.md
+└── README.md
 🧠 Fitur Utama
 Fitur	Deskripsi
 🔹 Routing Manual	Mengatur endpoint API di public/index.php

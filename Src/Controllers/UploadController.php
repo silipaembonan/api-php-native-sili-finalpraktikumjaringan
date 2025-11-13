@@ -5,8 +5,7 @@ class UploadController extends BaseController{
     if(($_SERVER['CONTENT_TYPE']??'') && str_contains($_SERVER['CONTENT_TYPE'],'application/json')){
       return $this->error(415,'Use multipart/form-data for upload');
     }
-    // Debug: uncomment to check
-    // var_dump($_FILES); exit;
+    
     if(empty($_FILES['file'])) return $this->error(422,'file is required');
     $f=$_FILES['file']; if($f['error']!==UPLOAD_ERR_OK){
       $errors = [UPLOAD_ERR_INI_SIZE=>'File too large (ini)', UPLOAD_ERR_FORM_SIZE=>'File too large (form)', 
